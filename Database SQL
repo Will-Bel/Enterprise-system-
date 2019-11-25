@@ -1,0 +1,20 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+CREATE TABLE `Claims` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mem_id` text NOT NULL,
+  `date` date NOT NULL,
+  `rationale` text NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `amount` float NOT NULL,
+  PRIMARY KEY (`id`));
+  
+INSERT INTO `claims` (`id`, `mem_id`, `date`, `rationale`, `status`, `amount`) VALUES
+(1, 'me-aydin', '2016-04-16', 'change mirror', 'APPROVED', 120),
+(2, 'me-aydin', '2016-09-08', 'repair scratch', 'APPROVED', 90),
+(3, 'e-simons', '2016-10-10', 'polishing tyers', 'APPROVED', 75);
